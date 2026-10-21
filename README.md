@@ -6,7 +6,7 @@ forever, but leaves a *scent* so later robots ignore the same fatal move.
 
 ## Run
 
-Requires Node >= 20 (dependencies pinned by `package-lock.json`):
+Requires Node >= 20.11 (dependencies pinned by `package-lock.json`):
 
 ```sh
 npm install
