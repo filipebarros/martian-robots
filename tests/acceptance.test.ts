@@ -3,13 +3,12 @@
 import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { main } from "../src/cli";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const ROOT = path.resolve(import.meta.dirname, "..");
 const SAMPLE_INPUT_FILE = path.join(ROOT, "sample_input.txt");
 const EXPECTED_LINES = ["1 1 E", "3 3 N LOST", "2 3 S"];
 
